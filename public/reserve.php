@@ -15,13 +15,11 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 예약 정보 가져오기
-    $grade = $_POST['grade'];
     $class = $_POST['class'];
-    $number = $_POST['number'];
     $name = $_POST['name'];
 
     // SQL 삽입 쿼리
-    $sql = "INSERT INTO reservations (grade, class, number, name) VALUES ('$grade', '$class', '$number', '$name')";
+    $sql = "INSERT INTO reservations (class, name) VALUES ('$class', '$name')";
 
     // 쿼리 실행 및 결과 확인
     if ($conn->query($sql) === TRUE) {
