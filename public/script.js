@@ -1,8 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("reserveButton").addEventListener("click", function() {
-        document.getElementById("reserveForm").style.display = "block";
-    });
-});
+function reservation() {
+    const res = document.getElementById("reservationForm");
+
+    if (res.style.display === 'none') {
+        res.style.display = 'block';
+    }
+
+    else {
+        res.style.display = 'none';
+    }
+}
 
 
 function submitReservation() {
