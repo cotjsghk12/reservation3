@@ -66,7 +66,7 @@
     color: white;
 }
 
-#reservationForm {
+#reserveForm {
     display: none;
     z-index: 1;
     position: absolute;
@@ -168,7 +168,7 @@ label[for="classNum"] {
         font-size: 48px;
     }
 
-    #reservationForm {
+    #reserveForm {
         left: 17.44%;
         top: 20.01%;
         width: 67.14%;
@@ -266,7 +266,7 @@ label[for="classNum"] {
         font-size: 24px;
     }
 
-    #reservationForm {
+    #reserveForm {
         left: 10%;
         top: 19.32%;
         width: 79.16%;
