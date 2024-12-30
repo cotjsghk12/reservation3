@@ -12,7 +12,7 @@ function reservation() {
 
 
 function submitReservation() {
-    var classNum = document.getElementById("class").value;
+    var classNum = document.getElementById("classNum").value;
     var name = document.getElementById("name").value;
 
     if (classNum && name) {
@@ -30,7 +30,7 @@ function submitReservation() {
             }
         };
 
-        var data =  "&class=" + encodeURIComponent(classNum) + "&name=" + encodeURIComponent(name);
+        var data =  "&classNum=" + encodeURIComponent(classNum) + "&name=" + encodeURIComponent(name);
         xhr.send(data);
     } else {
         alert("모든 정보를 입력해주세요.");
