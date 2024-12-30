@@ -1,9 +1,9 @@
 <?php
 // 환경 변수에서 데이터베이스 연결 정보 가져오기
-$servername = getenv('DB_HOST');
-$username = getenv('DB_USER');
-$password = getenv('DB_PASS');
-$dbname = getenv('DB_NAME');
+$servername = "mongodb";
+$username = "sunhwa";
+$password = "Young0612!";
+$dbname = "clusters0";
 
 // MySQL 데이터베이스에 연결
 $conn = new mysqli($servername, $username, $password, $dbname);
