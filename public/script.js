@@ -1,5 +1,5 @@
 function reservation() {
-    const res = document.getElementById("reservationForm");
+    const res = document.getElementById("reserveForm");
 
     if (res.style.display === 'none') {
         res.style.display = 'block';
