@@ -1,6 +1,6 @@
 <?php
 // 환경 변수에서 데이터베이스 연결 정보 가져오기
-$servername = "mongodb";
+$servername = "mongodb+srv";
 $username = "sunhwa";
 $password = "Young0612!";
 $dbname = "clusters0";
