@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("reserveButton").addEventListener("click", function() {
-        reservation();
-    });
-});
 
 function reservation() {
     const res = document.getElementById("reserveForm");
