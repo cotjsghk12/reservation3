@@ -1,11 +1,15 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("reserveButton").addEventListener("click", function() {
+        reservation();
+    });
+});
+
 function reservation() {
     const res = document.getElementById("reserveForm");
 
     if (res.style.display === 'none') {
         res.style.display = 'block';
-    }
-
-    else {
+    } else {
         res.style.display = 'none';
     }
 }
@@ -20,7 +24,7 @@ function submitReservation() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({classNum, name })
+            body: JSON.stringify({ classNum, name })
         })
         .then(response => response.json())
         .then(data => {
@@ -37,5 +41,6 @@ function submitReservation() {
         alert("모든 정보를 입력해주세요.");
     }
 }
+
 
 
