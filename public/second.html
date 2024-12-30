@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>두 번째 페이지</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <button id="reserveButton">예약하기</button>
+    <div id="reserveForm" style="display:none;">
+        <form id="reservationForm" action="reserve.php" method="POST">
+            <label for="grade">학년:</label>
+            <input type="text" id="grade" name="grade"><br>
+            <label for="class">반:</label>
+            <input type="text" id="class" name="class"><br>
+            <label for="number">번호:</label>
+            <input type="text" id="number" name="number"><br>
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name"><br>
+            <button type="button" onclick="submitReservation()">예약 제출</button>
+        </form>
+    </div>
+</body>
+</html>
