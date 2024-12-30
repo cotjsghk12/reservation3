@@ -5,8 +5,16 @@
     <link rel="stylesheet" type="text/css" href="second.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <button id="reserveButton">예약하기</button>
+<body><img src="svgimg/image.png" class="background-img">
+    <div class="background"></div>
+    <div class="frame-1">
+      <img src="svgimg/image 1.png" class="logo"><div class="font-1">Posan Highschool</div>
+    </div>
+    <div class="frame-2">
+      <div class="font-2">12월<br>19일</div>
+      <div class="font-3">월요일 8,9교시</div>
+      <button id="reserveButton" class="btn">예약하기</button>
+    </div>
     <div id="reserveForm" style="display:none;">
         <form id="reservationForm" action="reserve.php" method="POST">
             <label for="name">학생 이름:</label>
@@ -15,7 +23,7 @@
             <label for="classNum">학년 반 번호:<br>(예: 1학년 1반 1번 -> 1101)</label>
             <input type="text" id="classNum" name="classNum" required>
             <br>
-            <button type="button" onclick="submitReservation()">예약 제출</button>
+            <button id=btn-1 type="button" onclick="submitReservation()">예약 제출</button>
         </form>
     </div>
 </body>

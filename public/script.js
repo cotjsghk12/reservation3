@@ -23,7 +23,7 @@ function submitReservation() {
             }
         };
 
-        var data = "grade=" + encodeURIComponent(grade) + "&class=" + encodeURIComponent(classNum) + "&number=" + encodeURIComponent(number) + "&name=" + encodeURIComponent(name);
+        var data =  "&class=" + encodeURIComponent(classNum) + "&name=" + encodeURIComponent(name);
         xhr.send(data);
     } else {
         alert("모든 정보를 입력해주세요.");

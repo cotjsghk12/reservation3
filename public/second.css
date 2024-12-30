@@ -2,8 +2,8 @@
     position: fixed;
     left: 0px;
     top: 0px;
-    background-color: black;
-    box-shadow: 0px 9px 50px 48px black;
+    background-color: white;
+    box-shadow: 0px 9px 50px 48px white;
 }
 
 .background-img {
@@ -18,7 +18,7 @@
 
 .font-1 {
     font-family: 'Judson', serif;
-    color: white;
+    color: black;
     position: absolute;
     line-height: 115%;
 }
@@ -35,7 +35,7 @@
 
 .font-2 {
     position: absolute;
-    color: white;
+    color: black;
     font-family: 'Judson', serif;
     text-align: center;
     line-height: 115%;
@@ -43,7 +43,7 @@
 
 .font-3 {
     position: absolute;
-    color: white;
+    color: black;
     font-family: 'Judson', serif;
     line-height: 115%;
     text-align: center;
@@ -51,10 +51,10 @@
 
 .btn {
     position: absolute;
-    border-color: white;
+    border-color: black;
     border-width: 2px;
     border-style: solid;
-    color: white;
+    color: black;
     font-family: 'Judson', serif;
     line-height: 115%;
     text-align: center;
@@ -62,8 +62,52 @@
 }
 
 .btn:active {
+    background-color: black;
+    color: white;
+}
+
+#reservationForm {
+    display: none;
+    z-index: 1;
+    position: absolute;
     background-color: white;
+    border: 3px solid gainsboro;
+    border-radius: 25px;
+    position: absolute;
+}
+
+label[for="name"] {
     color: black;
+    font-family: 'Judson', serif;
+    position: absolute;
+}
+
+#name {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    position: absolute;
+    border-style: none;
+}
+
+label[for="classNum"] {
+    color: black;
+    font-family: 'Judson', serif;
+    position: absolute;
+}
+
+#classNum {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    position: absolute;
+    border-style: none;
+}
+
+#btn-1 {
+    background-color: #54afff;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    border-style: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -96,32 +140,73 @@
     }
 
     .frame-2 {
-        left: 16.92%;
+        left: 30.33%;
         top: 15.52%;
-        width: 66.14%;
+        width: 39.32%;
         height: 41.69%;
     }
 
     .font-2 {
         position: absolute;
-        left: 0;
+        left: 24.83%;
         top: 0;
         font-size: 80px;
     }
 
     .font-3 {
         position: absolute;
-        left: 25.59%;
-        top: 48.71%;
+        left: 24.89%;
+        top: 56.67%;
         font-size: 32px;
     }
 
     .btn {
-        left: 20.27%;
+        left: 0%;
         top: 79.15%;
-        width: 59.44%;
+        width: 100%;
         height: 20.84%;
         font-size: 48px;
+    }
+
+    #reservationForm {
+        left: 17.44%;
+        top: 20.01%;
+        width: 67.14%;
+        height: 57.12%;
+    }
+    
+    label[for="name"] {
+        left: 6.01%;
+        top: 9.43%;
+        font-size: 24px;
+    }
+    
+    #name {
+        left: 4.91%;
+        top: 16.8%;
+        width: 90.17%;
+        height: 10.17%;
+    }
+    
+    label[for="classNumber"] {
+        left: 7.56%;
+        top: 36.53%;
+        font-size: 24px;
+    }
+    
+    #classNum {
+        left: 4.91%;
+        top: 48.54%;
+        width: 90.17%;
+        height: 10.17%;
+    }
+    
+    #btn-1 {
+        left: 35.09%;
+        top: 84.56%;
+        width: 29.66%;
+        height: 11.14%;
+        font-size: 24px;
     }
 }
 
@@ -144,7 +229,7 @@
     }
 
     .logo {
-        left: 3%;
+        left: 0;
         top:0;
     }
 
@@ -155,30 +240,70 @@
     }
 
     .frame-2 {
-        left: 7.63%;
-        top: 16.01%;
-        width: 84.72%;
-        height: 37.16%;
+        left: 22.77%;
+        top: 11.21%;
+        width: 53.43%;
+        height: 39.05%;
     }
 
     .font-2 {
-        left:0;
+        left:18.19%;
         top: 0;
-        font-size: 48px;
+        font-size: 64px;
     }
 
     .font-3 {
-        left: 23.6%;
-        top: 51.27%;
+        left: 18.19%;
+        top: 57.78%;
         font-size: 20px;
     }
 
     .btn {
-        left: 18.46%;
+        left: 0;
         top: 79.27%;
-        width: 63.06%;
+        width: 100%;
         height: 20.72%;
         font-size: 24px;
     }
 
+    #reservationForm {
+        left: 10%;
+        top: 19.32%;
+        width: 79.16%;
+        height: 46.48%;
+    }
+
+    label[for="name"] {
+        left: 9.82%;
+        top: 7.55%;
+        font-size: 20px;
+    }
+    
+    #name {
+        left: 4.91%;
+        top: 16.86%;
+        width: 90.17%;
+        height: 10.17%;
+    }
+    
+    label[for="classNum"] {
+        left: 9.82%;
+        top: 32.55%;
+        font-size: 20px;
+    }
+    
+    #classNum {
+        left: 4.91%;
+        top: 48.54%;
+        width: 90.17%;
+        height: 10.17%;
+    }
+    
+    #btn-1 {
+        left: 31.92%;
+        top: 81.68%;
+        width: 38.24%;
+        height: 13.08%;
+        font-size: 20px;
+    }
 }
