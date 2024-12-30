@@ -3,7 +3,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 module.exports = async (req, res) => {
   if (req.method === 'POST') {
     const { classNum, name } = req.body;
-    const uri ="mongodb+srv://sunhwa:Young0612!@cluster0.t4awl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+    const uri ="mongodb://atlas-sql-677202f7380c35697377f0b6-t4awl.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin";
 
     const client = new MongoClient(uri, {
       serverApi: {
