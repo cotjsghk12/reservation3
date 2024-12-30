@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 function submitReservation() {
     var classNum = document.getElementById("class").value;
     var name = document.getElementById("name").value;
